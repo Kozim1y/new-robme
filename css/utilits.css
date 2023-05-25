@@ -1,0 +1,64 @@
+body::-webkit-scrollbar {
+  width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #4e8c28;
+}
+.pog-navbar div:hover{
+  color: #01b001;
+  background-color: #44ff0024;
+  cursor: pointer;
+}
+.categories-box a {
+  background-color: white;
+}
+.categories-box a:hover{
+  background-color: #44ff0024;
+}
+.circle{
+  font-size: 7px;
+}
+.fs-7{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.fs-8{
+  font-size: 0.6rem;
+}
+.transition{
+  transition: 300ms;
+}
+.cursor{
+  cursor: pointer;
+}
+.month{
+  color: orangered;
+}
+.month:hover{
+  color: #fff;
+  border-radius: 15px;
+  background-color: orangered;
+}
+.table-box{
+  min-width: 956px;
+}
+.items{
+  border: 1px solid green;
+  color: green;
+}
+.items:hover{
+  border: 1px solid white;
+  color: #fff;
+  background-color: green;
+}
+.border-left{
+  border-left: 8px solid;
+}
+.plus{
+  position: relative;
+  left: -35px;
+  top: 0px;
+}
+.flex-1{
+  flex: 1;
+}

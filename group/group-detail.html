@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh;">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"	rel="stylesheet"/>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/utilits.css">
+    <style>
+      body::-webkit-scrollbar {
+        width: 4px;
+      }
+      body::-webkit-scrollbar-thumb {
+        background: #4e8c28;
+      }
+      a {
+        text-decoration: none;
+      }
+      .side-navbar a {
+        color: black;
+      }
+      .side-navbar a:hover{
+        background-color: #44ff0024;
+        cursor: pointer;
+      }
+      .categories-box a {
+        background-color: white;
+      }
+      .categories-box a:hover{
+        background-color: #44ff0024;
+      }
+    </style>
+		<title>Robme</title>
+	</head>
+	<body class="bg-light h-100" style="display: flex; justify-content: space-between; align-items: center; flex-direction: column;">
+    <!-- Header start -->
+		<header class="shadow-sm py-2 bg-white position-sticky top-0 w-100">
+			<div class="container-fluid">
+				<div class="d-flex justify-content-between align-items-center flex-wrap">
+					<div class="logo-box d-flex align-items-center">
+						<a href="../index.html">
+							<img src="../img/logo.png" alt="Site img" width="60" />
+						</a>
+            <div class="dropdown">
+              <a class="bx bx-plus-circle fs-3 ms-4 text-decoration-none text-success" href="#" data-bs-toggle="dropdown" aria-expanded="false"></a>
+              <ul class="dropdown-menu py-0 shadow">
+                <li><a class="dropdown-item text-black-50 d-flex align-items-center rounded-2 p-2" href="#" data-bs-toggle="offcanvas" data-bs-target="#addStudentModal" aria-controls="offcanvasRight"><i class="bx bx-plus-circle fs-5 me-1"></i><span>Yangi talaba</span></a></li>
+                <li><a class="dropdown-item text-black-50 d-flex align-items-center rounded-2 p-2" href="#" data-bs-toggle="offcanvas" data-bs-target="#addPaymentModal" aria-controls="offcanvasRight"><i class='bx bx-dollar-circle fs-5 me-1'></i><span>To'lov</span></a></li>
+              </ul>
+            </div>
+					</div>
+					<form class="d-flex align-items-center rounded-pill border border-2 order-sm-0 order-1 mx-sm-0 mx-auto my-2" method="get">
+						<input class="form-control rounded-pill border-0 " type="search" placeholder="Qidiruv" required />
+						<button class="bg-transparent border-0"><i class="bx bx-search"></i></button>
+					</form>
+
+          <div class="d-flex justify-content-between align-items-center py-2">
+            <a class='bx bx-bell bx-tada fs-4 text-decoration-none ms-3 text-success' href=""></a>
+            <a class="text-decoration-none ms-3 text-success fw-bold" href="#">
+              <span>Zokirjonov Farrux</span>
+              <img src="" alt="" width="30">
+            </a>
+          </div>
+				</div>
+			</div>
+		</header>
+    <!-- Header end -->
+    
+    <!-- Main start -->
+    <main class="w-100 h-100 flex-grow-1">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-12 col-sm-2 col-lg-1 d-flex flex-wrap flex-row flex-sm-column bg-white p-0 side-navbar shadow">
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#">
+              <i class='bx bx-download fs-2'></i>
+              <span class="fs-6">Lidlar</span>
+            </a>
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="../teachers.html">
+              <i class='bx bx-user fs-2'></i>
+              <span class="fs-6">O'qituvchilar</span>
+            </a>
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#">
+              <i class='bx bx-layer fs-2'></i>
+              <span class="fs-6">Guruxlar</span>
+            </a>
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="../students.html">
+              <i class='bx bx-group fs-2'></i>
+              <span class="fs-6">Talabalar</span>
+            </a>
+
+            <div class="dropend">
+              <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class='bx bx-dollar-circle fs-2'></i>
+                <span class="fs-6">Moliya</span>
+              </a>
+              <ul class="dropdown-menu shadow-lg">
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="../moliya/moliya.html">
+                    <i class="bx bx-coin-stack"></i>
+                    <span>Barcha to'lovlar</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="../moliya/moliya_2.html">
+                    <i class="bx bx-coin-stack"></i>
+                    <span>Yechib olish</span>  
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="../moliya/moliya_3.html">
+                    <i class="bx bx-pie-chart-alt-2"></i>
+                    <span>Xarajatlar</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="../moliya/moliya_4.html">
+                    <i class="bx bx-food-menu"></i>
+                    <span>Ish haqi</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="../moliya/moliya_5.html">
+                    <i class="bx bx-error"></i>
+                    <span>Qarzdorlar</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#">
+              <i class='bx bx-pie-chart-alt-2 fs-2'></i>
+              <span class="fs-6">Hisobotlar</span>
+            </a>
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#">
+              <i class='bx bx-cog fs-2'></i>
+              <span class="fs-6">Sozlamalar</span>
+            </a>
+          </div>
+          <!-- Mashini ichiga code yoziladi -->
+          <div class="col-12 col-sm-10 col-lg-11 p-4" style="max-height: 100vh; overflow: auto;">
+            <!-- Categories cards -->
+            <h4 class="d-flex align-items-center mb-3 text-center">Arab tili <i class="circle fas fa-circle mx-3"></i>Arab tili <i class="circle fas fa-circle mx-3"></i>Umirzaqova Muazzam</h4>
+            <div class="d-flex flex-column">
+              <div class="d-flex flex-column pb-3 me-lg-3 me-0">
+                <div class="d-flex flex-column flex-lg-row w-100 justify-content-between">
+                  <div class="d-flex flex-column me-0 me-lg-2 w-100">
+                    <div class="bg-white shadow p-3">
+                      <button class="border-0 fw-bold py-1 px-2">Arab tili</button>
+                      <span class="d-flex align-items-center my-3 fs-lg-4 fs-5">Arab tili <i class="circle fas fa-circle mx-3"></i>Umirzaqova Muazzam</span>
+                      <div class="d-flex flex-column">
+                        <span><b class="me-2">Narxi:</b>170 000 UZS</span>
+                        <span><b class="me-2">Vaqt:</b>Toq kunlari - 11.00</span>
+                      </div>
+                      <div class="my-3 d-flex flex-column">
+                        <span><b class="me-2">Xonalar:</b>Room 5</span>
+                        <span><b class="me-2">Mashg'ulotlar sanalari:</b>16.11.2022 - 30.11.2023</span>
+                      </div>
+                      <div class="mb-3 d-flex justify-content-between">
+                        <a class="items transition cursor mx-1 p-2 rounded-pill bx bx-pencil" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightTahrir" aria-controls="offcanvasRightTahrir"></a>
+                        <a class="items transition cursor mx-1 p-2 rounded-pill bx bx-trash"></a>
+                        <a class="items transition cursor mx-1 p-2 rounded-pill bx bx-envelope" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightsms" aria-controls="offcanvasRightsms""></a>
+                        <a class="items transition cursor mx-1 p-2 rounded-pill bx bx-plus" data-bs-toggle="modal" data-bs-target="#plusModal"></a>
+                        <a class="items transition cursor mx-1 p-2 rounded-pill bx bx-dollar" data-bs-toggle="modal" data-bs-target="#TolovModal"></a>
+                      </div>
+                    </div>
+                    <div class="bg-white mt-4 mb-4 mb-lg-0 p-2 px-4 d-flex justify-content-between align-items-center border-left border-success shadow">
+                      <span>Eslatma</span>
+                      <a class="bx bx-flag items transition cursor mx-1 p-2 rounded-pill"></a>
+                    </div>
+                  </div>
+                  <div class="w-100 bg-white shadow p-3 ms-0 ms-lg-2 d-flex justify-content-between flex-column">
+                    <table class="table table-borderless">
+                      <tr>
+                        <td class="d-flex align-items-center cursor" data-bs-toggle="dropdown" aria-expanded="false"> 
+                          <i class="circle fas fa-circle text-danger me-1"></i>Obidova Muslima
+                          <ul class="dropdown-menu px-3 py-2 shadow">
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom">
+                              <span class="d-flex">Obidova Muslima <p class="ms-4 text-secondary fs-7">(id:330386)</p></span>
+                              <p class="text-secondary fs-7">Faol (O'qishni to'laydi)</p>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Telefon</p>
+                              <span>(93) 056-80-70</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Balans</p>
+                              <span>461 UZS</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Talaba qo'shilgan sana</p>
+                              <span>15.08.2023</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Eslatma</p>
+                              <span>10 sinf arab tili yangi</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column mt-2">
+                              <a href="#" class="text-black">Profilga o'ting &#8594;</a>
+                            </li>
+                          </ul>
+                        </td>
+                        <td>(93) 056-80-70</td>
+                        <td>
+                          <a class="bx bx-dots-vertical-rounded text-success" data-bs-toggle="dropdown" aria-expanded="false" href="#"></a>
+                          <ul class="dropdown-menu py-0">
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#muzlashModal" href="#">
+                                <i class="me-1 bx bx-pause"></i>Muzlash
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightAddTolov" aria-controls="offcanvasRight" href="#">
+                                <i class="me-1 bx bx-dollar"></i>To'lov 
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#addNoteModal" href="#">
+                                <i class="me-1 bx bx-flag"></i>Yangi eslatma qo'shing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#otkazishModal" href="#">
+                                <i class="me-1 bx bx-download"></i>Talabani guruhga o'tkazing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" href="#">
+                                <i class="me-1 bx bx-trash"></i>Guruhdan olib tashlash
+                              </a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="d-flex align-items-center cursor" data-bs-toggle="dropdown" aria-expanded="false"> 
+                          <i class="circle fas fa-circle text-danger me-1"></i>Obidova Muslima
+                          <ul class="dropdown-menu px-3 py-2 shadow">
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom">
+                              <span class="d-flex">Obidova Muslima <p class="ms-4 text-secondary fs-7">(id:330386)</p></span>
+                              <p class="text-secondary fs-7">Faol (O'qishni to'laydi)</p>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Telefon</p>
+                              <span>(93) 056-80-70</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Balans</p>
+                              <span>461 UZS</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Talaba qo'shilgan sana</p>
+                              <span>15.08.2023</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Eslatma</p>
+                              <span>10 sinf arab tili yangi</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column mt-2">
+                              <a href="#" class="text-black">Profilga o'ting &#8594;</a>
+                            </li>
+                          </ul>
+                        </td>
+                        <td>(93) 056-80-70</td>
+                        <td>
+                          <a class="bx bx-dots-vertical-rounded text-success" data-bs-toggle="dropdown" aria-expanded="false" href="#"></a>
+                          <ul class="dropdown-menu py-0">
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#muzlashModal" href="#">
+                                <i class="me-1 bx bx-pause"></i>Muzlash
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightAddTolov" aria-controls="offcanvasRight" href="#">
+                                <i class="me-1 bx bx-dollar"></i>To'lov 
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#addNoteModal" href="#">
+                                <i class="me-1 bx bx-flag"></i>Yangi eslatma qo'shing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#otkazishModal" href="#">
+                                <i class="me-1 bx bx-download"></i>Talabani guruhga o'tkazing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" href="#">
+                                <i class="me-1 bx bx-trash"></i>Guruhdan olib tashlash
+                              </a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="d-flex align-items-center cursor" data-bs-toggle="dropdown" aria-expanded="false"> 
+                          <i class="circle fas fa-circle text-danger me-1"></i>Obidova Muslima
+                          <ul class="dropdown-menu px-3 py-2 shadow">
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom">
+                              <span class="d-flex">Obidova Muslima <p class="ms-4 text-secondary fs-7">(id:330386)</p></span>
+                              <p class="text-secondary fs-7">Faol (O'qishni to'laydi)</p>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Telefon</p>
+                              <span>(93) 056-80-70</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Balans</p>
+                              <span>461 UZS</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Talaba qo'shilgan sana</p>
+                              <span>15.08.2023</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Eslatma</p>
+                              <span>10 sinf arab tili yangi</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column mt-2">
+                              <a href="#" class="text-black">Profilga o'ting &#8594;</a>
+                            </li>
+                          </ul>
+                        </td>
+                        <td>(93) 056-80-70</td>
+                        <td>
+                          <a class="bx bx-dots-vertical-rounded text-success" data-bs-toggle="dropdown" aria-expanded="false" href="#"></a>
+                          <ul class="dropdown-menu py-0">
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#muzlashModal" href="#">
+                                <i class="me-1 bx bx-pause"></i>Muzlash
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightAddTolov" aria-controls="offcanvasRight" href="#">
+                                <i class="me-1 bx bx-dollar"></i>To'lov 
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#addNoteModal" href="#">
+                                <i class="me-1 bx bx-flag"></i>Yangi eslatma qo'shing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#otkazishModal" href="#">
+                                <i class="me-1 bx bx-download"></i>Talabani guruhga o'tkazing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" href="#">
+                                <i class="me-1 bx bx-trash"></i>Guruhdan olib tashlash
+                              </a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="d-flex align-items-center cursor" data-bs-toggle="dropdown" aria-expanded="false"> 
+                          <i class="circle fas fa-circle text-danger me-1"></i>Obidova Muslima
+                          <ul class="dropdown-menu px-3 py-2 shadow">
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom">
+                              <span class="d-flex">Obidova Muslima <p class="ms-4 text-secondary fs-7">(id:330386)</p></span>
+                              <p class="text-secondary fs-7">Faol (O'qishni to'laydi)</p>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Telefon</p>
+                              <span>(93) 056-80-70</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Balans</p>
+                              <span>461 UZS</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Talaba qo'shilgan sana</p>
+                              <span>15.08.2023</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Eslatma</p>
+                              <span>10 sinf arab tili yangi</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column mt-2">
+                              <a href="#" class="text-black">Profilga o'ting &#8594;</a>
+                            </li>
+                          </ul>
+                        </td>
+                        <td>(93) 056-80-70</td>
+                        <td>
+                          <a class="bx bx-dots-vertical-rounded text-success" data-bs-toggle="dropdown" aria-expanded="false" href="#"></a>
+                          <ul class="dropdown-menu py-0">
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#muzlashModal" href="#">
+                                <i class="me-1 bx bx-pause"></i>Muzlash
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightAddTolov" aria-controls="offcanvasRight" href="#">
+                                <i class="me-1 bx bx-dollar"></i>To'lov 
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#addNoteModal" href="#">
+                                <i class="me-1 bx bx-flag"></i>Yangi eslatma qo'shing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#otkazishModal" href="#">
+                                <i class="me-1 bx bx-download"></i>Talabani guruhga o'tkazing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" href="#">
+                                <i class="me-1 bx bx-trash"></i>Guruhdan olib tashlash
+                              </a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="d-flex align-items-center cursor" data-bs-toggle="dropdown" aria-expanded="false"> 
+                          <i class="circle fas fa-circle text-danger me-1"></i>Obidova Muslima
+                          <ul class="dropdown-menu px-3 py-2 shadow">
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom">
+                              <span class="d-flex">Obidova Muslima <p class="ms-4 text-secondary fs-7">(id:330386)</p></span>
+                              <p class="text-secondary fs-7">Faol (O'qishni to'laydi)</p>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Telefon</p>
+                              <span>(93) 056-80-70</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Balans</p>
+                              <span>461 UZS</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Talaba qo'shilgan sana</p>
+                              <span>15.08.2023</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column border-bottom mt-1">
+                              <p class="text-secondary fs-7">Eslatma</p>
+                              <span>10 sinf arab tili yangi</span>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-start flex-column mt-2">
+                              <a href="#" class="text-black">Profilga o'ting &#8594;</a>
+                            </li>
+                          </ul>
+                        </td>
+                        <td>(93) 056-80-70</td>
+                        <td>
+                          <a class="bx bx-dots-vertical-rounded text-success" data-bs-toggle="dropdown" aria-expanded="false" href="#"></a>
+                          <ul class="dropdown-menu py-0">
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#muzlashModal" href="#">
+                                <i class="me-1 bx bx-pause"></i>Muzlash
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightAddTolov" aria-controls="offcanvasRight" href="#">
+                                <i class="me-1 bx bx-dollar"></i>To'lov 
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#addNoteModal" href="#">
+                                <i class="me-1 bx bx-flag"></i>Yangi eslatma qo'shing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" data-bs-toggle="modal" data-bs-target="#otkazishModal" href="#">
+                                <i class="me-1 bx bx-download"></i>Talabani guruhga o'tkazing
+                              </a>
+                            </li>
+                            <li>
+                              <a class="rounded-2 dropdown-item text-secondary d-flex justify-content-start align-items-center" href="#">
+                                <i class="me-1 bx bx-trash"></i>Guruhdan olib tashlash
+                              </a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                  </table>
+                  <span class="cursor">Arxivlangan talabalarni ko'rsatish</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <ul class="nav nav-tabs mb-3" id="tabs-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#davomat" type="button" role="tab" aria-controls="davomat" aria-selected="true">Davomat</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#onlayn-dars" type="button" role="tab" aria-controls="onlayn-dars" aria-selected="false">Onlayn Darsla va Materiallar</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#chegirma" type="button" role="tab" aria-controls="chegirma" aria-selected="false">Chegirmali Narx</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#imtihon" type="button" role="tab" aria-controls="imtihon" aria-selected="false">Imtihonlar</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tarix" type="button" role="tab" aria-controls="tarix" aria-selected="false">Tarix</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#izoh" type="button" role="tab" aria-controls="izoh" aria-selected="false">Izohlar</button>
+                </li>
+              </ul>
+              <div class="tab-content bg-white p-1 shadow-sm" id="pills-tabContent">
+                <div class="tab-pane fade show active overflow-x-auto" id="davomat" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  <div class="mt-4 d-flex flex-column">
+                    <div class="d-flex justify-content-between flex-column flex-md-row">
+                      <h4 class="me-2">Davomat</h4>
+                      <div>
+                        <table class="table table-borderless">
+                          <tr class="fs-7">
+                            <td class="month transition cursor d-flex">
+                              <span>noy </span>
+                              <span> 2022</span>
+                            </td>
+                            <td class="month transition cursor">dek</td>
+                            <td class="month transition cursor d-flex">
+                              <span>yan </span>
+                              <span> 2023</span>
+                            </td>
+                            <td class="month transition cursor">fev</td>
+                            <td class="month transition cursor">mar</td>
+                            <td class="month transition cursor">apr</td>
+                            <td class="month transition cursor">may</td>
+                            <td class="month transition cursor">iyun</td>
+                            <td class="month transition cursor">iyul</td>
+                            <td class="month transition cursor">avg</td>
+                            <td class="month transition cursor">sent</td>
+                            <td class="month transition cursor">okt</td>
+                            <td class="month transition cursor">noy</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="w-100 table-box">
+                      <table class="table table-box fs-7">
+                        <tr class="text-start">
+                          <th>Ism</th>
+                          <th>1 may</th>
+                          <th>3 may</th>
+                          <th>5 may</th>
+                          <th>8 may</th>
+                          <th>10 may</th>
+                          <th>12 may</th>
+                          <th>15 may</th>
+                        </tr>
+                        <tr class="text-start">
+                          <td>Obidova Muslima</td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                        </tr>
+                        <tr class="text-start">
+                          <td>Anvarova Hadicha</td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-danger p-1 rounded-2">Yo'q</div>
+                          </td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                        </tr>
+                        <tr class="text-start">
+                          <td>Ibragimova Saida</td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-danger p-1 rounded-2">Yo'q</div>
+                          </td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                        </tr>
+                        <tr class="text-start">
+                          <td>Mahmudova Dilrabo</td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-danger p-1 rounded-2">Yo'q</div>
+                          </td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                        </tr>
+                        <tr class="text-start">
+                          <td>Shamsiddinova Oishabonu</td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-primary p-1 rounded-2">Bor edi</div>
+                          </td>
+                          <td>
+                            <div class="text-white bg-danger p-1 rounded-2">Yo'q</div>
+                          </td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                          <td><i class="cursor fs-3 fa-regular fa-circle"></i></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="onlayn-dars" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                  <div class="w-100 d-flex flex-column mt-4">
+                    <div class="bg-white shadow p-3 border-left border-success d-flex justify-content-between align-items-center flex-wrap">
+                      <span class="me-3 fs-7 fs-sm-6">Darslar talabalar tomonidan o'qilishi uchun mavjud bo'lib. Kurs sahifasida darslarni qo'shishingiz yoki o'zgartirishingiz mumkin.</span>
+                      <i class="fas fa-copy text-success fs-4 mt-xl-0 mt-2 cursor"></i>
+                    </div>
+                    <div class="d-flex justify-content-end mt-3">
+                      <button class="bg-warning rounded-pill border-0 p-2 px-4">
+                        <a href="group-sarlavha.html" class="text-white">Dars qo'shing</a>
+                      </button>
+                    </div>
+                    <div class="bg-warning-subtle p-3 text-warning mt-3">Hali yuklanmagan darslar va materiallar</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="chegirma" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                  <div class="mt-4">
+                    <h4>Individual chegirmali narxlar</h4>
+                    <div class="border-left border-success bg-white shadow p-3 m-2 mt-4 d-flex justify-content-between">
+                      <span class="fs-7 fs-md-5 me-2">Siz har qanday talaba uchun shaxsiy o'quv to'lovini belgilashingiz mumkin. Chegirmali narx ko'rsating va Enter tugmasini bosing</span>
+                      <i class="fas fa-dollar"></i>
+                    </div>
+                    <div class="overflow-x-scroll">
+                      <div class="table-box">
+                        <table class="table fs-7">
+                          <tr>
+                            <th>Ism</th>
+                            <th>Tel</th>
+                            <th>Individual narx</th>
+                            <th>Cause</th>
+                          </tr>
+                          <tr>
+                            <td>Obidova Muslima</td>
+                            <td>(90) 056-80-70</td>
+                            <td colspan="2">
+                              <button class="bg-success text-white p-1 px-2 border-0 rounded-pill"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightChegirma" aria-controls="offcanvasRight">Narxni o'zgartirish</button>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Obidova Muslima</td>
+                            <td>(90) 056-80-70</td>
+                            <td colspan="2">
+                              <button class="bg-success text-white p-1 px-2 border-0 rounded-pill" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightChegirma" aria-controls="offcanvasRight">Narxni o'zgartirish</button>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Obidova Muslima</td>
+                            <td>(90) 056-80-70</td>
+                            <td colspan="2" class="d-flex flex-column align-items-start">
+                              <button class="border-0 rounded-1">160 000</button>
+                              <span>01.05.2023 - 30.11.2023</span>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Obidova Muslima</td>
+                            <td>(90) 056-80-70</td>
+                            <td colspan="2" class="d-flex flex-column align-items-start">
+                              <button class="border-0 rounded-1">160 000</button>
+                              <span>01.05.2023 - 30.11.2023</span>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Obidova Muslima</td>
+                            <td>(90) 056-80-70</td>
+                            <td colspan="2" class="d-flex flex-column align-items-start">
+                              <button class="border-0 rounded-1">160 000</button>
+                              <span>01.05.2023 - 30.11.2023</span>
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Obidova Muslima</td>
+                            <td>(90) 056-80-70</td>
+                            <td class="d-flex flex-column align-items-start">
+                              <button class="border-0 rounded-1">160 000</button>
+                              <span>01.05.2023 - 30.11.2023</span>
+                            </td>
+                            <td></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="imtihon" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                  <div class="p-4 text-end">
+                    <button class="border-0 rounded-pill bg-warning text-white p-2 px-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightAdd" aria-controls="offcanvasRight">Yangisini qo'shish</button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tarix" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                  <div class="p-4">
+                    <div>
+                      <div class="d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="d-flex flex-column justify-content-between align-items-start">
+                          <span class="fs-5">Holati o'zgartirildi</span>
+                          <span class="fs-7">
+                            <i class="fas fa-user"></i>
+                            Mo'ydinova Madinaxon  (99) 070-77-58</span>
+                          <span>Group Name: Arab tili</span>
+                          <span>Guruh: #42553</span>
+                          <span>Activated from: 2023.05.12</span>
+                        </div>
+                        <div class="fs-7 mt-3 mt-sm-0 text-secondary d-flex flex-column align-items-start">
+                          <span>12.15.2023 12.30.31</span>
+                          <span>Bozorova Zuhraxon</span>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="d-flex flex-column justify-content-between align-items-start">
+                          <span class="fs-5">Holati o'zgartirildi</span>
+                          <span class="fs-7">
+                            <i class="fas fa-user"></i>
+                            Mo'ydinova Madinaxon  (99) 070-77-58</span>
+                          <span>Group Name: Arab tili</span>
+                          <span>Guruh: #42553</span>
+                          <span>Activated from: 2023.05.12</span>
+                        </div>
+                        <div class="fs-7 mt-3 mt-sm-0 text-secondary d-flex flex-column align-items-start">
+                          <span>12.15.2023 12.30.31</span>
+                          <span>Bozorova Zuhraxon</span>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="d-flex flex-column justify-content-between align-items-start">
+                          <span class="fs-5">Holati o'zgartirildi</span>
+                          <span class="fs-7">
+                            <i class="fas fa-user"></i>
+                            Mo'ydinova Madinaxon  (99) 070-77-58</span>
+                          <span>Group Name: Arab tili</span>
+                          <span>Guruh: #42553</span>
+                          <span>Activated from: 2023.05.12</span>
+                        </div>
+                        <div class="fs-7 mt-3 mt-sm-0 text-secondary d-flex flex-column align-items-start">
+                          <span>12.15.2023 12.30.31</span>
+                          <span>Bozorova Zuhraxon</span>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="d-flex flex-column justify-content-between align-items-start">
+                          <span class="fs-5">Holati o'zgartirildi</span>
+                          <span class="fs-7">
+                            <i class="fas fa-user"></i>
+                            Mo'ydinova Madinaxon  (99) 070-77-58</span>
+                          <span>Group Name: Arab tili</span>
+                          <span>Guruh: #42553</span>
+                          <span>Activated from: 2023.05.12</span>
+                        </div>
+                        <div class="fs-7 mt-3 mt-sm-0 text-secondary d-flex flex-column align-items-start">
+                          <span>12.15.2023 12.30.31</span>
+                          <span>Bozorova Zuhraxon</span>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="d-flex flex-column justify-content-between align-items-start">
+                          <span class="fs-5">Holati o'zgartirildi</span>
+                          <span class="fs-7">
+                            <i class="fas fa-user"></i>
+                            Mo'ydinova Madinaxon  (99) 070-77-58</span>
+                          <span>Group Name: Arab tili</span>
+                          <span>Guruh: #42553</span>
+                          <span>Activated from: 2023.05.12</span>
+                        </div>
+                        <div class="fs-7 mt-3 mt-sm-0 text-secondary d-flex flex-column align-items-start">
+                          <span>12.15.2023 12.30.31</span>
+                          <span>Bozorova Zuhraxon</span>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="d-flex flex-column justify-content-between align-items-start">
+                          <span class="fs-5">Holati o'zgartirildi</span>
+                          <span class="fs-7">
+                            <i class="fas fa-user"></i>
+                            Mo'ydinova Madinaxon  (99) 070-77-58</span>
+                          <span>Group Name: Arab tili</span>
+                          <span>Guruh: #42553</span>
+                          <span>Activated from: 2023.05.12</span>
+                        </div>
+                        <div class="fs-7 mt-3 mt-sm-0 text-secondary d-flex flex-column align-items-start">
+                          <span>12.15.2023 12.30.31</span>
+                          <span>Bozorova Zuhraxon</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="izoh" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                  <div class="p-4 py-3 text-secondary w-100 fw-medium">
+                    <div class="row my-3 border-bottom">
+                      <span class="col-4 col-md-6">Izoh</span>
+                      <span class="col-3 col-md-4">Xodim</span>
+                      <span class="col-1 col-md-2">Yaratilgan</span>
+                    </div>
+                    <div class="my-3 border-bottom text-center">
+                      <span>Bo'sh</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main end -->
+
+    <!-- Add student modal -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addStudentModal" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Yangi talaba qo'shish</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="w-100">
+          <label class="w-100 my-2">
+            Telefon:
+            <input class="form-control my-2" type="tel" placeholder="+998 97 976 76 88" required>
+          </label>
+          <label class="w-100 my-2">
+            Ism:
+            <input class="form-control my-2" type="text" required>
+          </label>
+          <label class="w-100 my-2">
+            Tug'ilgan sana:
+            <input class="form-control my-2" type="date" required>
+          </label>
+          <div>
+            Jinsi:
+            <span class="d-flex align-items-center my-1">
+              <input class="mt-1 me-1" type="radio" name="jins" id="male">
+              <label for="male">erkak</label>
+            </span>
+            <span class="d-flex align-items-center my-1">
+              <input class="mt-1 me-1" type="radio" name="jins" id="female">
+              <label for="female">ayol</label>
+            </span>
+          </div>
+          <label class="w-100 my-2">
+            Izoh:
+            <textarea class="form-control my-2" cols="30" rows="3"></textarea>
+          </label>
+          <button class="btn btn-success rounded-pill">Yuborish</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Add payment modal -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addPaymentModal" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">To'lov qo'shish</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form>
+          <label class="w-100 my-2">Talaba:
+            <input class="form-control my-1" type="text" required>
+          </label>
+          <div>
+            To'lov usuli:
+            <div class="row">
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Naqd pul
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Payme
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Plastic kartasi
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Click
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Bank hisobi
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Apelsin
+              </label>
+            </div>
+          </div>
+          <label class="w-100 my-2">
+            Miqdor:
+            <input class="form-control my-1" type="number" required>
+          </label>
+          <label class="w-100 my-2">
+            Sana:
+            <input class="form-control my-1" type="date" required>
+          </label>
+          <label class="w-100 my-2">
+            Izoh:
+            <textarea class="form-control my-1" rows="3"></textarea>
+          </label>
+          <button class="btn btn-success rounded-pill" type="submit">Yuborish</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Tahrirlash -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightTahrir" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="modal-title m-0" id="staticBackdropLabel">Guruhni tahrirlash</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex align-items-center flex-wrap">
+          <label class="w-100 py-2">Nomi
+            <div class="mt-2 d-flex">
+              <input class="w-100 py-2 border px-3 out" value="Arab tili" type="text">
+            </div>
+          </label>
+          <label class="w-100 py-2">Kurs tanlash
+            <select class="w-100 py-2 px-2 mt-2">
+              <option class="w-100 py-2 border">Select option</option>
+              <option class="w-100 py-2 border">Biologiya new</option>
+              <option class="w-100 py-2 border">Rus tili new</option>
+              <option class="w-100 py-2 border">Koreys tili yangi</option>
+              <option class="w-100 py-2 border">Pre - inter</option>
+              <option class="w-100 py-2 border">Matem Fayzullo</option>
+              <option class="w-100 py-2 border">Arab tili</option>
+            </select>
+          </label>
+          <label class="w-100 py-2">O'qituvchini tanlang
+            <select class="w-100 py-2 px-2 mt-2">
+              <option class="w-100 py-2 border">Select option</option>
+              <option class="w-100 py-2 border">Abdullo</option>
+              <option class="w-100 py-2 border">Fayzullo</option>
+              <option class="w-100 py-2 border">Muhammadnazir</option>
+              <option class="w-100 py-2 border">Grigoriy</option>
+              <option class="w-100 py-2 border">Mbappe</option>
+              <option class="w-100 py-2 border">Maguire</option>
+            </select>
+          </label>
+          <label class="w-100 py-2">Kunlar
+            <div class="mt-2 d-flex">
+              <input type="number" class="w-100 py-2 border px-3 out">
+            </div>
+          </label>
+          <label class="w-100 py-2">Xonani tanlang
+            <select class="w-100 py-2 px-2 mt-2">
+              <option class="w-100 py-2 border">Select option</option>
+              <option class="w-100 py-2 border">Room 1</option>
+              <option class="w-100 py-2 border">Room 2</option>
+              <option class="w-100 py-2 border">Room 3</option>
+              <option class="w-100 py-2 border">Room 4</option>
+              <option class="w-100 py-2 border">Room 5</option>
+              <option class="w-100 py-2 border">Room 6</option>
+            </select>
+          </label>
+          <label class="w-100 py-2">Darsning boshlanish vaqti
+            <div class="mt-2 d-flex">
+              <input type="time" class="w-100 py-2 border px-3 out">
+            </div>
+          </label>
+          <label class="w-100 py-2">Guruhni boshlanish vaqti
+            <div class="mt-2 d-flex">
+              <input type="date" class="w-100 py-2 border px-3 out">
+            </div>
+          </label>
+          <label class="w-100 py-2">Guruhni tugash sanasi
+            <div class="mt-2 d-flex">
+              <input type="date" class="w-100 py-2 border px-3 out">
+            </div>
+          </label>
+          <button class="py-2 px-3 my-2 border-0 outline-0 rounded-pill bg-success text-white">Yuborish</button>
+        </form>
+      </div>
+    </div> 
+
+    <!-- Group SMS -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightsms" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="modal-title m-0" id="staticBackdropLabel">Guruhga SMS yuboring</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex align-items-center flex-wrap">
+          <label class="w-100 py-2">Yuboruvchi: MODME
+            <div class="mt-2 d-flex">
+              <textarea class="w-100 p-2" placeholder="Xabarni kiriting"></textarea>          
+            </div>
+          </label>
+    
+          <div class="my-2 w-100 d-flex justify-content-between">
+            <p>0 ta beldi (~ 1 SMS )</p>
+            <p>10ta talabaga</p>
+          </div>
+          <button class="py-2 px-3 my-2 border-0 outline-0 rounded-pill bg-success text-white">SMS yuborish</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Add modal -->
+    <div class="modal fade" id="plusModal" tabindex="-1" aria-labelledby="plusModalLabelledby" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Yangi talaba</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label class="w-100 py-2">Talabani tanlang
+                <select class="w-100 py-2 px-2 mt-2">
+                  <option class="w-100 py-2 border"></option>
+                  <option class="w-100 py-2 border">Talaba 1</option>
+                  <option class="w-100 py-2 border">Talaba 2</option>
+                  <option class="w-100 py-2 border">Talaba 3</option>
+                </select>
+              </label>
+              <label class="w-100 py-2">Sanadan boshlab
+                <div class="mt-2 d-flex">
+                  <input type="date" class="w-100 p-2" placeholder="Sana tanlanmadi">         
+                </div>
+              </label>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success rounded-pill" data-bs-dismiss="modal">Yuborish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- To'lovlar Modal -->
+    <div class="modal fade" id="TolovModal" tabindex="-1" aria-labelledby="plusModalLabelledby" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">To'lovlar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label class="w-100 py-2">Boshlanish sanasi
+                <div class="mt-2 d-flex">
+                  <input type="date" class="w-100 py-2 border px-3 out">
+                </div>
+              </label>
+              <label class="w-100 py-2">Yakunlanish sanasi
+                <div class="mt-2 d-flex">
+                  <input type="date" class="w-100 py-2 border px-3 out">
+                </div>
+              </label>
+              <div class="w-100 py-2">Javoblardan birini tanlang
+                <label class="mt-2 d-flex fs-7">
+                  <input type="checkbox" class="me-2">
+                  Guruhdagi talabalardan ushbu davrdagi voz kechislarni olib tashlash
+                </label>
+                <label class="mt-2 d-flex fs-7">
+                  <input type="checkbox" class="me-2">
+                  Guruhdagi talabalardan ushbu davr uchun voz kechish
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success rounded-pill" data-bs-dismiss="modal">Yuborish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Muzlash Modal -->
+    <div class="modal fade" id="muzlashModal" tabindex="-1" aria-labelledby="plusModalLabelledby" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Sababini ayting</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label class="w-100 py-2">Sanadan boshlab
+                <div class="mt-2 d-flex">
+                  <textarea class="w-100 p-2"></textarea>        
+                </div>
+              </label>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success rounded-pill" data-bs-dismiss="modal">Yuborish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- To'lov qo'shish -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightAddTolov" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="modal-title m-0" id="staticBackdropLabel">To'lov qo'shish</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex align-items-center flex-wrap">
+          <label class="w-100 py-2">Talaba
+            <div class="mt-2 d-flex p-2 bg-secondary-subtle rounded-1">Obidova Muslima</div>
+          </label>
+          <label class="py-2 d-flex justify-content-center align-items-center">
+            <span>Balans</span>
+            <div class="bg-success rounded-pill p-1 px-2 text-white ms-2">461 so'm</div>
+          </label>
+          <form>
+            <label class="w-100 py-2">Guruh
+              <select class="w-100 py-2 px-2 mt-2">
+                <option class="w-100 py-2 border">Arab tili: Arab tili Umirzaqova Muazzam (Toq 11.00)</option>
+                <option class="w-100 py-2 border">Arab tili: Arab tili Umirzaqova Muazzam (Toq 11.00)</option>
+                <option class="w-100 py-2 border">Arab tili: Arab tili Umirzaqova Muazzam (Toq 11.00)</option>
+                <option class="w-100 py-2 border">Arab tili: Arab tili Umirzaqova Muazzam (Toq 11.00)</option>
+              </select>
+            </label>
+            <label class="w-100 py-2">To'lov usuli
+              <div class="w-100 mt-2 px-2 d-flex">
+                <div class="w-50">
+                  <div class="d-flex align-items-center">
+                    <input type="radio" class="me-1">
+                    <span>Naqd pul</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="radio" class="me-1">
+                    <span>Plastic kartasi</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="radio" class="me-1">
+                    <span>Bank xisobi</span>
+                  </div>
+                </div>
+                <div class="w-50">
+                  <div class="d-flex align-items-center">
+                    <input type="radio" class="me-1">
+                    <span>Payme</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="radio" class="me-1">
+                    <span>Click</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input type="radio" class="me-1">
+                    <span>Apelsin</span>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <label class="w-100 py-2">Miqdor
+              <div class="mt-2 d-flex">
+                <input type="text" class="w-100 py-2 border px-3 out">
+              </div>
+            </label>
+            <label class="w-100 py-2">Sana
+              <div class="mt-2 d-flex">
+                <input type="date" class="w-100 py-2 border px-3 out">
+              </div>
+            </label>
+            <label class="w-100 py-2">Izoh
+              <div class="mt-2 d-flex">
+                <textarea class="w-100 p-2"></textarea>
+              </div>
+            </label>
+          </form>
+          <button class="py-2 px-3 my-2 border-0 outline-0 rounded-pill bg-success text-white">Yuborish</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Add Note -->
+    <div class="modal fade" id="addNoteModal" tabindex="-1" aria-labelledby="plusModalLabelledby" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Yangi eslatma qo'shing</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label class="w-100 py-2">Izoh
+                <div class="mt-2 d-flex">
+                  <textarea class="w-100 p-2 overflow-y-scroll"></textarea>        
+                </div>
+              </label>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success rounded-pill" data-bs-dismiss="modal">Saqlash</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Talabani guruhga o'tkazish -->
+    <div class="modal fade" id="otkazishModal" tabindex="-1" aria-labelledby="plusModalLabelledby" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Talabani guruhga o'tkazing</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label class="w-100 py-2">Guruhni tanlang
+              <select class="w-100 py-2 px-2 mt-2">
+                <option class="w-100 py-2 border">Matem</option>
+                <option class="w-100 py-2 border">Matem</option>
+                <option class="w-100 py-2 border">Matem</option>
+                <option class="w-100 py-2 border">Matem</option>
+              </select>
+            </label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success rounded-pill" data-bs-dismiss="modal">Talabani guruhga qo'shish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh;">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"	rel="stylesheet"/>
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/utilits.css" />
+    <style>
+      body::-webkit-scrollbar,
+      .sid-scrol::-webkit-scrollbar{
+        width: 4px;
+      }
+      body::-webkit-scrollbar-thumb,
+      .sid-scrol::-webkit-scrollbar-thumb{
+        background: #4e8c28;
+      }
+      a {
+        text-decoration: none;
+      }
+      .side-navbar a {
+        color: black;
+      }
+      .side-navbar a:hover{
+        background-color: #44ff0024;
+        cursor: pointer;
+      }
+      .active-navbar {
+        color: #01b001 !important;
+        background-color: #44ff0024;
+      }
+    </style>
+		<title>Robme</title>
+	</head>
+	<body class="bg-light h-100" style="display: flex; justify-content: space-between; align-items: center; flex-direction: column;">
+		<header class="shadow-sm py-2 bg-white position-sticky top-0 w-100">
+			<div class="container-fluid">
+				<div class="d-flex justify-content-between align-items-center flex-wrap">
+					<div class="logo-box d-flex align-items-center">
+						<a href="./index.html">
+							<img src="./img/logo.png" alt="Site img" width="60" />
+						</a>
+            <div class="dropdown">
+              <a class="bx bx-plus-circle fs-3 ms-4 text-decoration-none text-success" href="#" data-bs-toggle="dropdown" aria-expanded="false"></a>
+              <ul class="dropdown-menu py-0 shadow">
+                <li><a class="dropdown-item text-black-50 d-flex align-items-center rounded-2 p-2" href="#" data-bs-toggle="offcanvas" data-bs-target="#addStudentModal" aria-controls="offcanvasRight"><i class="bx bx-plus-circle fs-5 me-1"></i><span>Yangi talaba</span></a></li>
+                <li><a class="dropdown-item text-black-50 d-flex align-items-center rounded-2 p-2" href="#" data-bs-toggle="offcanvas" data-bs-target="#addPaymentModal" aria-controls="offcanvasRight"><i class='bx bx-dollar-circle fs-5 me-1'></i><span>To'lov</span></a></li>
+              </ul>
+            </div>
+					</div>
+					<form class="d-flex align-items-center rounded-pill border border-2 order-sm-0 order-1 mx-sm-0 mx-auto my-2" method="get">
+						<input class="form-control rounded-pill border-0 " type="search" placeholder="Qidiruv" required />
+						<button class="bg-transparent border-0"><i class="bx bx-search"></i></button>
+					</form>
+
+          <div class="d-flex justify-content-between align-items-center py-2">
+            <a class='bx bx-bell bx-tada fs-4 text-decoration-none ms-3 text-success' href=""></a>
+            <a class="text-decoration-none ms-3 text-success fw-bold" href="#">
+              <span>Zokirjonov Farrux</span>
+              <img src="" alt="" width="30">
+            </a>
+          </div>
+				</div>
+			</div>
+		</header>
+
+    <main class="w-100 h-100 flex-grow-1">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-12 col-sm-2 col-lg-1 d-flex flex-wrap flex-row flex-sm-column bg-white p-0 side-navbar shadow">
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#">
+              <i class='bx bx-download fs-2'></i>
+              <span class="fs-6">Lidlar</span>
+            </a>
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./teachers.html">
+              <i class='bx bx-user fs-2'></i>
+              <span class="fs-6">O'qituvchilar</span>
+            </a>
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./group/group.html">
+              <i class='bx bx-layer fs-2'></i>
+              <span class="fs-6">Guruxlar</span>
+            </a>
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./students.html">
+              <i class='bx bx-group fs-2'></i>
+              <span class="fs-6">Talabalar</span>
+            </a>
+
+            <div class="dropend">
+              <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class='bx bx-dollar-circle fs-2'></i>
+                <span class="fs-6">Moliya</span>
+              </a>
+              <ul class="dropdown-menu shadow-lg">
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./moliya/moliya.html">
+                    <i class="bx bx-coin-stack"></i>
+                    <span>Barcha to'lovlar</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./moliya/moliya_2.html">
+                    <i class="bx bx-coin-stack"></i>
+                    <span>Yechib olish</span>  
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./moliya/moliya_3.html">
+                    <i class="bx bx-pie-chart-alt-2"></i>
+                    <span>Xarajatlar</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./moliya/moliya_4.html">
+                    <i class="bx bx-food-menu"></i>
+                    <span>Ish haqi</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./moliya/moliya_5.html">
+                    <i class="bx bx-error"></i>
+                    <span>Qarzdorlar</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#">
+              <i class='bx bx-pie-chart-alt-2 fs-2'></i>
+              <span class="fs-6">Hisobotlar</span>
+            </a>
+            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#">
+              <i class='bx bx-cog fs-2'></i>
+              <span class="fs-6">Sozlamalar</span>
+            </a>
+          </div>
+
+          <div class="col-sm-10 col-lg-11">
+            <div class="row p-4 overflow-y-scroll" style="max-height: 100vh;">
+              
+              <div class="col-12 col-sm-8 col-lg-4">
+                
+              <div class="col-12">
+                <div class="shadow p-3">
+                  <div class="">
+                    <h3>Sobirov Ismatillo</h3>
+                    <span class="text-secondary">(id: 519828)</span>
+                  </div>
+                  <div class="d-flex align-items-center text-secondary my-2">
+                    <span class="py-1 px-3 mx-1 text-white bg-success rounded-pill d-flex"><p class="m-0 mx-1">0</p> so'm</span>
+                    balans
+                  </div>
+                  <div class="py-3 d-flex text-secondary">
+                    Telefon: <span class="text-black mx-2">99 999 99 99</span>
+                  </div>
+                  <div class="border-bottom pb-3">
+                    <div class="d-flex w-25">
+                      <a class="p-1 dropdown-item text-success border rounded-pill border border-success d-flex align-items-center justify-content-center" data-bs-toggle="offcanvas" data-bs-target="#StudentTahrirlash" aria-controls="offcanvasRight" data-bs-toggle="tooltip" data-bs-placement="top" title="Talabani tahrirlash" href="#">
+                        <i class="bx bx-pencil"></i>
+                      </a>
+    
+                      <a class="p-1 mx-2 dropdown-item text-success border rounded-pill border border-success d-flex align-items-center justify-content-center" data-bs-toggle="offcanvas" data-bs-target="#addSmsModal" aria-controls="offcanvasRight" data-bs-toggle="tooltip" data-bs-placement="top" title="SMS" href="#">
+                        <i class="bx bx-envelope"></i>
+                      </a>
+                      
+                      <a class="p-1 dropdown-item text-success border rounded-pill border border-success d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="top" title="DELETE" href="#">
+                        <i class="bx bx-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="text-secondary my-2">
+                    Talaba qo'shilgan sana: <span class="text-black mx-2">13 Май 2023</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="btn d-flex align-items-center text-info border border-info rounded-pill" " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class="bx bx-phone-call text-info mx-1"></i>
+                      Guruhga qo'shish
+                    </div>
+                    
+                    <div class="btn-group border border-success rounded-pill">
+                      <a type="button" class="btn text-success rounded-pill" data-bs-toggle="offcanvas" data-bs-target="#addPaymentModal" aria-controls="offcanvasRight">
+                        <i class="bx bx-money"></i>
+                        To'lov
+                      </a>
+                      <button type="button" class="btn rounded-pill dropdown-toggle text-success dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                        <li><a class="dropdown-item text-danger" href="#">
+                          <i class="bx bx-share"></i>
+                          To'lovni qaytarish</a>
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">
+                          <i class="bx bx-phone"></i>
+                          Hisobdan o'chirish</a>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>  
+              
+              <div class="col-12 my-3 bg-body shadow d-flex justify-content-between">
+                <span class="py-4 bg-info text-info">a</span>
+                <div class="w-100 p-2 d-flex align-items-start justify-content-between">
+                  <p class="m-0 mx-2">Eslatma</p>
+                  <span class="p-2 text-success border border-success rounded-pill d-flex align-items-center justify-content-center">
+                    <i class="bx bx-flag"></i>
+                  </span>
+                </div>
+              </div>
+
+              </div>
+
+              <div class="col-12 col-lg-8">
+                
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-group-tab" data-bs-toggle="tab" data-bs-target="#nav-group" type="button" role="tab" aria-controls="nav-group" aria-selected="true">Guruh</button>
+                  <button class="nav-link" id="nav-comment-tab" data-bs-toggle="tab" data-bs-target="#nav-comment" type="button" role="tab" aria-controls="nav-comment" aria-selected="false">Izoh</button>
+                  <button class="nav-link" id="nav-calls-tab" data-bs-toggle="tab" data-bs-target="#nav-calls" type="button" role="tab" aria-controls="nav-calls" aria-selected="false">Qo'ng'iroqlar tarixi</button>
+                  <button class="nav-link" id="nav-sms-tab" data-bs-toggle="tab" data-bs-target="#nav-sms" type="button" role="tab" aria-controls="nav-sms" aria-selected="false">SMS</button>
+                  <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history" type="button" role="tab" aria-controls="nav-history" aria-selected="false">Tarix</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+
+                <div class="tab-pane fade show active p-3" id="nav-group" role="tabpanel" aria-labelledby="nav-group-tab">
+
+                  <div class="row">
+                    <div class="my-2 col-lg-6 col-xl-6 shadow rounded">
+                      <div class="d-flex justify-content-between p-3 border-bottom">
+                        <div class="">
+                          <span class="p-1 px-1 text-center bg-secondary bg-opacity-25">Shohruh kids 2</span>
+                          <p class="m-0 my-1">Koreys tili Yangi</p>
+                          <p class="m-0 my-1">Abdumalikova Mahliyo</p>
+                        </div>
+                        <div class=" d-flex flex-column align-items-end">
+                          <span class="text-secondary d-flex">04.04.2023</span>
+                          <span class="text-secondary d-flex">04.04.2024</span>
+                          <span class="text-secondary d-flex">Juft kunlar • 15:00</span>
+                        </div>
+                      </div> 
+                      <div class="p-3">
+                        <div class="my-0 d-flex align-items-center">
+                          <p class="m-0 mx-1 text-secondary">Holat:</p>
+                          <p class="m-0">Faol (O'qishni to'laydi)</p>
+                        </div>
+                        <div class="my-0 d-flex align-items-center">
+                          <p class="m-0 mx-1 text-secondary">Talaba qo'shilgan sana:</p>
+                          <p class="m-0">01.05.2023</p>
+                        </div>
+                        <div class="my-0 d-flex align-items-center">
+                          <p class="m-0 mx-1 text-secondary">Faollashtirilgan:</p>
+                          <p class="m-0">01.05.2023</p>
+                        </div>
+                        <div class="my-0 d-flex align-items-center">
+                          <p class="m-0 mx-1 text-secondary">Bu talaba uchun narx:</p>
+                          <p class="m-0">200 000 so'm</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 py-2 p-1">
+                      <h3>To'lovlar</h3>
+                      <div class="px-3 py-3 table-responsive shadow">
+                        <table class="fs-7 table table-striped overflow-x-auto" style="min-width: 800px;">
+                          <thead class="">
+                            <tr class="">
+                              <th class="px-1 py-3" colspan="1">Sana</th>
+                              <th class="px-0 py-3" colspan="1">Miqdor</th>
+                              <th class="px-1 py-3" colspan="3">Izoh</th>
+                              <th class="px-1 py-3" colspan="2">Xodim</th>
+                              <th class="px-1 py-3" colspan="2">asdads</th>
+                            </tr>
+                          </thead>
+                          <tbody >
+                            <tr class=""> 
+                              <td class="px-1 py-3" colspan="1">13.05.2023</td>
+                              <td class="px-1 py-3" colspan="1">
+                                  <span class="text-success">+200 000</span> UZS
+                              </td>
+                              <td class="px-1 py-3 d-flex flex-column w-100" colspan="3">
+                                <div class="px-2 text-center w-75 bg-secondary bg-opacity-25">
+                                  <span class="text-black">koreys tili</span>
+                                </div>
+                                Naqd pul
+                              </td>
+                              <td class="" colspan="3">
+                                
+                              <div class="d-flex flex-column" >
+                                <span class="">Bozorova Zuhrahon</span>
+                                13.05.2023 15:10
+                              </div>
+                              </td>
+                              <td class="px-1 py-3" colspan="3">
+                                <div class="btn-group border border-success rounded-pill">
+                                  <a type="button" class="btn text-success rounded-pill" data-bs-toggle="offcanvas" data-bs-target="#addPaymentModal" aria-controls="offcanvasRight">
+                                    <i class="bx bx-money"></i>
+                                    To'lov
+                                  </a>
+                                  <button type="button" class="btn rounded-pill dropdown-toggle text-success dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                    <li><a class="dropdown-item text-danger" href="#">
+                                      <i class="bx bx-share"></i>
+                                      To'lovni qaytarish</a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item text-danger" href="#">
+                                      <i class="bx bx-phone"></i>
+                                      Hisobdan o'chirish</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade " id="nav-comment" role="tabpanel" aria-labelledby="nav-comment-tab">
+                  <div class="col-12 my-4 p-4 table-responsive d-flex align-items-start justify-content-between shadow">
+                    <table class="fs-7 table table-striped overflow-x-auto" style="min-width: 500px;">
+                      <thead class="">
+                        <tr class="">
+                          <th class="px-0 py-3" colspan="2">Izoh</th>
+                          <th class="px-1 py-3">Xodim</th>
+                          <th class="px-1 py-3">Yaratilgan</th>
+                        </tr>
+                      </thead>
+                      <tbody >
+                        <tr class=""> 
+                          <td class="" colspan="2">Bo'sh</td>
+                          <td class="" colspan="">Bo'sh</td>
+                          <td class="" colspan="">Bo'sh</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade " id="nav-calls" role="tabpanel" aria-labelledby="nav-calls-tab">
+                  <div class="col-12 my-4 p-4 table-responsive d-flex align-items-start justify-content-between shadow">
+                    <table class="fs-7 table table-striped overflow-x-auto" style="min-width: 500px;">
+                      <thead class="">
+                        <tr class="">
+                          <th class="px-0 py-3" colspan="2">Izoh</th>
+                          <th class="px-1 py-3" colspan="1">Xodim</th>
+                          <th class="px-1 py-3" colspan="2">Yaratilgan</th>
+                          <th class="px-1 py-3" colspan="1">Yaratilgan</th>
+                        </tr>
+                      </thead>
+                      <tbody >
+                        <tr class=""> 
+                          <td class="" colspan="2">Bo'sh</td>
+                          <td class="" colspan="1">Bo'sh</td>
+                          <td class="" colspan="2">Bo'sh</td>
+                          <td class="" colspan="1">Bo'sh</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade " id="nav-sms" role="tabpanel" aria-labelledby="nav-sms-tab">
+                  <div class="col-12 my-4 p-4 table-responsive d-flex align-items-start justify-content-between shadow">
+                    <table class="fs-7 table table-striped overflow-x-auto" style="min-width: 500px;">
+                      <thead class="">
+                        <tr class="">
+                          <th class="px-0 py-3" colspan="2">Izoh</th>
+                          <th class="px-1 py-3" colspan="1">Xodim</th>
+                          <th class="px-1 py-3" colspan="1">Yaratilgan</th>
+                        </tr>
+                      </thead>
+                      <tbody >
+                        <tr class=""> 
+                          <td class="" colspan="2">Bo'sh</td>
+                          <td class="" colspan="1">Bo'sh</td>
+                          <td class="" colspan="1">Bo'sh</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+                
+                <div class="tab-pane fade " id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
+                  <div class="row flex-xl-row flex-column p-md-4">
+                    <div class="col-12 col-xl-6">
+                      <div class="d-flex justify-content-between p-3 shadow">
+                        <div class="d-flex flex-column">
+                          <h4 class="">Hisob to'ldirildi</h4>
+                          <span>200 000 UZS</span>
+                          <span>Transferred at: 13.05.2023 00:00</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <span class="text-secondary opacity-50">13.05.2023 15:10:35</span>
+                          <span class="text-secondary opacity-50">Bozorova Zuhrahon</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-xl-6 mt-3">  
+                      <h5 class="w-100">Guruhlar</h5>
+                      <div class="w-100 p-3 shadow d-flex align-items-center justify-content-between my-3">
+                        <div class="d-flex flex-column">
+                          <span class="text-center bg-secondary bg-opacity-25">Koreys tili</span>
+                          <p class="m-0">Koreys tili yangi</p>
+                          <p class="m-0 my-1">Abdumalikova Mahliyo</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <p class="m-0 text-secondary">01.05.2023</p>
+                          <p class="m-0 text-secondary">04.05.2024</p>
+                          <p class="m-0 text-secondary">Juft kunlar • 10:00</p>
+                        </div>
+                      </div>
+  
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- Button trigger modal -->
+
+<!-- Add student modal -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addStudentModal" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Yangi talaba qo'shish</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body sid-scrol">
+        <form class="w-100">
+          <label class="w-100 my-2">
+            Telefon:
+            <input class="form-control my-2" type="tel" placeholder="+998 97 976 76 88" required>
+          </label>
+          <label class="w-100 my-2">
+            Ism:
+            <input class="form-control my-2" type="text" required>
+          </label>
+          <label class="w-100 my-2">
+            Tug'ilgan sana:
+            <input class="form-control my-2" type="date" required>
+          </label>
+          <div>
+            Jinsi:
+            <span class="d-flex align-items-center my-1">
+              <input class="mt-1 me-1" type="radio" name="jins" id="male">
+              <label for="male">erkak</label>
+            </span>
+            <span class="d-flex align-items-center my-1">
+              <input class="mt-1 me-1" type="radio" name="jins" id="female">
+              <label for="female">ayol</label>
+            </span>
+          </div>
+          <label class="w-100 my-2">
+            Izoh:
+            <textarea class="form-control my-2" cols="30" rows="3"></textarea>
+            Qo'shimcha aloqa
+          </label>
+          <div class="d-flex my-2">
+
+            <div class="px-2 py-1 mx-1 rounded-pill border border-success">
+              <i class="bx bx-phone-call text-success"></i>
+            </div>
+
+            <div class="px-2 py-1 mx-1 rounded-pill border border-success">
+              <i class="bx bx-phone-call text-success"></i>
+            </div>
+
+            <div class="px-2 py-1 mx-1 rounded-pill border border-success">
+              <i class="bx bx-user text-success"></i>
+            </div>
+
+            <div class="px-2 py-1 mx-1 rounded-pill border border-success">
+              <i class="bx bx-envelope text-success"></i>
+            </div>
+
+            <div class="px-2 py-1 mx-1 rounded-pill border border-success">
+              <i class="bx bxl-telegram text-success"></i>
+            </div>
+
+            <div class="px-2 py-1 mx-1 rounded-pill border border-success">
+              <i class="bx bx-hard-hat text-success"></i>
+            </div>
+            
+            <div class="px-2 py-1 mx-1 rounded-pill border border-success">
+              <i class="bx bx-location-plus text-success"></i>
+            </div>
+            
+            <div class="px-2 py-1 mx-1 rounded-pill border border-success">
+              <i class="bx bx-list-plus text-success"></i>
+            </div>
+            
+          </div>
+          <div class="my-2 d-flex justify-content-end">+ Guruhga qo'shish</div>
+          <div class="my-2 d-flex justify-content-end">+ Parol qo'shing</div>
+          <button class="btn btn-success rounded-pill">Yuborish</button>
+        </form>
+      </div>
+    </div>
+
+<!-- Add payment modal -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addPaymentModal" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">To'lov qo'shish</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form>
+          <label class="w-100 my-2">Talaba:
+            <input class="form-control my-1" type="text" required>
+          </label>
+          <div>
+            To'lov usuli:
+            <div class="row">
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Naqd pul
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Payme
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Plastic kartasi
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Click
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Bank hisobi
+              </label>
+              <label class="col-6 my-1">
+                <input class="" type="radio" name="payment-type" required>
+                Apelsin
+              </label>
+            </div>
+          </div>
+          <label class="w-100 my-2">
+            Miqdor:
+            <input class="form-control my-1" type="number" required>
+          </label>
+          <label class="w-100 my-2">
+            Sana:
+            <input class="form-control my-1" type="date" required>
+          </label>
+          <label class="w-100 my-2">
+            Izoh:
+            <textarea class="form-control my-1" rows="3"></textarea>
+          </label>
+          <button class="btn btn-success rounded-pill" type="submit">Yuborish</button>
+        </form>
+      </div>
+    </div>
+
+
+<!-- Modal TAHRIRLASH -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addEditModal" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="modal-title m-0" id="staticBackdropLabel">O'qituvchini taxrirlash</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex align-items-center flex-wrap">
+          <label class="w-100 my-2">
+            Telefon raqam:
+              <input class="form-control my-1" type="tel" autofocus placeholder="+998 97 976 76 88" required>
+          </label>
+
+          <label class="w-100 my-2">
+            Ismi:
+            <input class="form-control my-1" type="text" placeholder="Ism kiritnig" required>
+          </label>
+
+
+          <label class="w-100 my-2">
+            Tug'ilgan sanasi:
+            <input class="form-control my-1" type="date" required>
+          </label>
+          
+          <div class="my-2">
+            Jinsi:
+            <span class="d-flex align-items-center my-1">
+              <input class="mt-1 me-1" type="radio" name="jins" id="male">
+              <label for="male">erkak</label>
+            </span>
+            <span class="d-flex align-items-center my-1">
+              <input class="mt-1 me-1" type="radio" name="jins" id="female">
+              <label for="female">ayol</label>
+            </span>
+          </div>
+          
+          <label class="w-100 my-2">
+            Rasmi
+            <input class="form-control my-1" type="file">
+          </label>
+
+          <button class="btn btn-success rounded-pill">Yuborish</button>
+
+        </form>
+        
+      </div>
+    </div>
+
+<!-- student tahrirlash -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="StudentTahrirlash" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Yangi talaba qo'shish</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="w-100">
+          <label class="w-100 my-2">
+            Telefon:
+            <input class="form-control my-2" type="tel" placeholder="+998 97 976 76 88" required>
+          </label>
+          <label class="w-100 my-2">
+            Ism:
+            <input class="form-control my-2" type="text" required>
+          </label>
+          <label class="w-100 my-2">
+            Tug'ilgan sana:
+            <input class="form-control my-2" type="date" required>
+          </label>
+          <div>
+            Jinsi:
+            <span class="d-flex align-items-center my-1">
+              <input class="mt-1 me-1" type="radio" name="jins" id="male">
+              <label for="male">erkak</label>
+            </span>
+            <span class="d-flex align-items-center my-1">
+              <input class="mt-1 me-1" type="radio" name="jins" id="female">
+              <label for="female">ayol</label>
+            </span>
+          </div>
+          <div class="my-2">
+            <span class="my-3">Qo'shimcha aloqa</span>
+
+            <div class="d-flex my-3">
+              <a class="px-2 py-1 mx-1 rounded-pill border border-success" href="#">
+                <i class="bx bx-phone-call text-success"></i>
+              </a>
+      
+              <a class="px-2 py-1 mx-1 rounded-pill border border-success" href="#">
+                <i class="bx bx-phone-call text-success"></i>
+              </a>
+      
+              <a class="px-2 py-1 mx-1 rounded-pill border border-success" href="#">
+                <i class="bx bx-user text-success"></i>
+              </a>
+      
+              <a class="px-2 py-1 mx-1 rounded-pill border border-success" href="#">
+                <i class="bx bx-envelope text-success"></i>
+              </a>
+      
+              <a class="px-2 py-1 mx-1 rounded-pill border border-success" href="#">
+                <i class="bx bxl-telegram text-success"></i>
+              </a>
+      
+              <a class="px-2 py-1 mx-1 rounded-pill border border-success" href="#">
+                <i class="bx bx-hard-hat text-success"></i>
+              </a>
+              
+              <a class="px-2 py-1 mx-1 rounded-pill border border-success" href="#">
+                <i class="bx bx-location-plus text-success"></i>
+              </a>
+              
+              <a class="px-2 py-1 mx-1 rounded-pill border border-success" href="#">
+                <i class="bx bx-list-plus text-success"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            Teglar
+            <select class="form-select my-2" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="my-2 d-flex justify-content-end">+ Parol qo'shing</div>
+          <button class="btn btn-success rounded-pill">Yuborish</button>
+        </form>
+      </div>
+    </div>
+
+<!-- Modal SMS -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addSmsModal" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="modal-title m-0" id="staticBackdropLabel">Talabaga SMS yuboring</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex align-items-center flex-wrap">
+              <label class="w-100 py-2">
+                Yuboruvchi: MODME
+                <div class="mt-2 d-flex">
+                  <textarea class="form-control" rows="3" required></textarea>              
+                </div>
+              </label>
+
+              <div class="my-2 w-100 d-flex justify-content-between">
+                <p>0 ta beldi (~ 1 SMS )</p>
+                <p>Shoxruhbek 2</p>
+              </div>
+              <button class="btn btn-success rounded-pill">SMS yuborish</button>
+
+            </form>
+            
+          </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Talabani guruhga qo'shish</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select my-2" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <div class="my-3 btn bg-info rounded-pill text-white">Talabani guruhga qo'shish</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts start -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
