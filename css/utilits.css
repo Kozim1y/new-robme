@@ -1,3 +1,6 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
 body::-webkit-scrollbar {
   width: 4px;
 }
@@ -18,8 +21,11 @@ body::-webkit-scrollbar-thumb {
 .circle{
   font-size: 7px;
 }
+.fs-6 {
+  font-size: 13px !important;
+}
 .fs-7{
-  font-size: 0.8rem;
+  font-size: 10px;
   font-weight: 400;
 }
 .fs-8{
