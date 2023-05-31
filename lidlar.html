@@ -35,7 +35,7 @@
 	</head>
 	<body class="bg-light h-100" style="display: flex; justify-content: space-between; align-items: center; flex-direction: column;">
     <!-- Header start -->
-		<header class="shadow-sm py-2 bg-white position-sticky top-0 w-100">
+		<header class="shadow-sm py-2 bg-white position-sticky top-0 w-100 z-3">
 			<div class="container-fluid">
 				<div class="d-flex justify-content-between align-items-center flex-wrap">
 					<div class="logo-box d-flex align-items-center">
@@ -71,26 +71,26 @@
     <main class="w-100 h-100 flex-grow-1">
       <div class="container-fluid h-100">
         <div class="row h-100">
-          <div class="col-12 col-sm-2 col-lg-1 d-flex flex-wrap flex-row flex-sm-column bg-white p-0 side-navbar shadow">
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./lidlar.html">
+          <div class="col-12 col-sm-2 col-lg-1 d-flex justify-content-around justify-content-sm-start flex-wrap flex-sm-column bg-white p-0 side-navbar shadow">
+            <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="./lidlar.html">
               <img src="./img/icons/download-icon.svg" alt="download icon" width="24">
               <span class="fs-6">Lidlar</span>
             </a>
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./teachers.html">
+            <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="./teachers.html">
               <img src="./img/icons/user-icon.svg" alt="user icon" width="24">
               <span class="fs-6">O'qituvchilar</span>
             </a>
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./group/group.html">
+            <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="./group/group.html">
               <img src="./img/icons/layers-icon.svg" alt="layers icon" width="24">
               <span class="fs-6">Guruxlar</span>
             </a>
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./students.html">
+            <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="./students.html">
               <img src="./img/icons/users-icon.svg" alt="users icon" width="24">
               <span class="fs-6">Talabalar</span>
             </a>
 
             <div class="dropend">
-              <a class="py-4 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="./img/icons/dollar-icon.svg" alt="dollar icon" width="24">
                 <span class="fs-6">To'lov</span>
               </a>
@@ -129,7 +129,7 @@
             </div>
 
             <div class="dropend">
-              <a class="py-4 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="./img/icons/bussines-icon.svg" alt="bussines icon" width="24">
                 <span class="fs-6">Hisobotlar</span>
               </a>
@@ -192,7 +192,7 @@
             </div>
 
             <div class="dropend">
-              <a class="py-4 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="./img/icons/setting-icon.svg" alt="settings icon" width="24">
                 <span class="fs-6">Sozlamalar</span>
               </a>
@@ -255,11 +255,10 @@
             </div>
           </div>
 
-          
           <div class="col-12 col-sm-10 col-lg-11" style="max-height: 900px; overflow-y: auto;">
             
             <div class="row drag-lists">
-              <div class="col-4 p-2">
+              <div class="col-12 col-sm-6 col-xl-4 p-2">
                 <h4>So'rovlar <span class="text-secondary">(24)</span></h4>
 
                 <ul class="bg-success bg-opacity-25 drag-list list-unstyled px-2 py-1 rounded">
@@ -335,9 +334,7 @@
                 </ul>
               </div>
 
-
-
-              <div class="col-4 p-2">
+              <div class="col-12 col-sm-6 col-xl-4 p-2">
                 <h4>Kutish <span class="text-secondary">(13)</span></h4>
                 <ul class="bg-secondary bg-opacity-25 drag-list list-unstyled px-2 py-1 rounded">
                   <h6 class="text-secondary py-1">Walked by</h6>

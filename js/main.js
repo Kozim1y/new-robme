@@ -9,6 +9,7 @@ for (let i = 0; i < elDragItems.length; i++) {
 	item.addEventListener("dragstart", function () {
 		draggedItem = item;
 		setTimeout(function () {
+			item.style.transition = "all 0.3s ease"
 			item.style.display = "none";
 		}, 0);
 	});

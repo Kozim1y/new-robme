@@ -34,7 +34,7 @@
 		<title>Robme</title>
 	</head>
 	<body class="bg-light h-100" style="display: flex; justify-content: space-between; align-items: center; flex-direction: column;">
-		<header class="shadow-sm py-2 bg-white position-sticky top-0 w-100">
+		<header class="shadow-sm py-2 bg-white position-sticky top-0 w-100 z-3">
 			<div class="container-fluid">
 				<div class="d-flex justify-content-between align-items-center flex-wrap">
 					<div class="logo-box d-flex align-items-center">
@@ -68,27 +68,28 @@
     <main class="w-100 h-100 flex-grow-1">
       <div class="container-fluid h-100">
         <div class="row h-100">
-          <div class="col-12 col-sm-2 col-lg-1 d-flex flex-wrap flex-row flex-sm-column bg-white p-0 side-navbar shadow">
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./lidlar.html">
-              <i class='bx bx-download fs-2'></i>
+
+          <div class="col-12 col-sm-2 col-lg-1 d-flex justify-content-around justify-content-sm-start flex-wrap flex-sm-column bg-white p-0 side-navbar shadow">
+            <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="./lidlar.html">
+              <img src="./img/icons/download-icon.svg" alt="download icon" width="24">
               <span class="fs-6">Lidlar</span>
             </a>
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./teachers.html">
-              <i class='bx bx-user fs-2'></i>
+            <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="./teachers.html">
+              <img src="./img/icons/user-icon.svg" alt="user icon" width="24">
               <span class="fs-6">O'qituvchilar</span>
             </a>
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./group/group.html">
-              <i class='bx bx-layer fs-2'></i>
+            <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="./group/group.html">
+              <img src="./img/icons/layers-icon.svg" alt="layers icon" width="24">
               <span class="fs-6">Guruxlar</span>
             </a>
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="./students.html">
-              <i class='bx bx-group fs-2'></i>
+            <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="./students.html">
+              <img src="./img/icons/users-icon.svg" alt="users icon" width="24">
               <span class="fs-6">Talabalar</span>
             </a>
 
             <div class="dropend">
-              <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class='bx bx-dollar-circle fs-2'></i>
+              <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./img/icons/dollar-icon.svg" alt="dollar icon" width="24">
                 <span class="fs-6">To'lov</span>
               </a>
               <ul class="dropdown-menu shadow-lg">
@@ -125,19 +126,135 @@
               </ul>
             </div>
 
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#">
-              <i class='bx bx-pie-chart-alt-2 fs-2'></i>
-              <span class="fs-6">Hisobotlar</span>
-            </a>
-            <a class="py-2 d-flex flex-column align-items-center justify-content-center flex-grow-1 px-1 px-sm-0 mx-1 mx-sm-0" href="#">
-              <i class='bx bx-cog fs-2'></i>
-              <span class="fs-6">Sozlamalar</span>
-            </a>
+            <div class="dropend">
+              <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./img/icons/bussines-icon.svg" alt="bussines icon" width="24">
+                <span class="fs-6">Hisobotlar</span>
+              </a>
+              <ul class="dropdown-menu shadow-lg">
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_1.html">
+                    <i class="bx bx-user"></i>
+                    <span>Talabalar holati</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_2.html">
+                    <i class="bx bx-layer-plus"></i>
+                    <span>O'qituvchining samaradorligi</span>  
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_3.html">
+                    <i class="bx bx-layer-plus"></i>
+                    <span>Kurs smaradorligi</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_4.html">
+                    <i class="bx bx-group"></i>
+                    <span>Konversiya hisobotlari</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_5.html">
+                    <i class="bx bx-group"></i>
+                    <span>Darsga kelish hisobotlari</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_6.html">
+                    <i class="bx bx-group"></i>
+                    <span>Darsga kelish hisobotlari</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_7.html">
+                    <i class="bx bx-mobile"></i>
+                    <span>Darsga kelish hisobotlari</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_8.html">
+                    <i class="bx bx-mobile"></i>
+                    <span>Darsga kelish hisobotlari</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_9.html">
+                    <i class="bx bx-list-ul"></i>
+                    <span>Darsga kelish hisobotlari</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropend">
+              <a class="p-3 py-sm-4 d-flex flex-column align-items-center justify-content-center" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./img/icons/setting-icon.svg" alt="settings icon" width="24">
+                <span class="fs-6">Sozlamalar</span>
+              </a>
+              <ul class="dropdown-menu shadow-lg">
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./settings/sms-sozlamalari.html">
+                    <i class="bx bx-message-dots"></i>
+                    <span>SMS sozlamalari</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./settings/onlain-telefoinya.html">
+                    <i class="bx bx-headphone"></i>
+                    <span>Online telefoniya</span>  
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./settings/kurslar.html">
+                    <i class="bx bx-layer-plus"></i>
+                    <span>Kurslar</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./settings/xonalar.html">
+                    <i class="bx bx-grid-alt"></i>
+                    <span>Xonalar</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./settings/dam-olish.html">
+                    <i class="bx bx-calendar"></i>
+                    <span>Dam olish kunlari</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./settings/arxiv.html">
+                    <i class="bx bx-folder"></i>
+                    <span>Arxiv</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./settings/guruhni-tarketgan.html">
+                    <i class="bx bx-user-plus"></i>
+                    <span>Guruxni tark etgan o'quvchilar</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_8.html">
+                    <i class="bx bx-mobile"></i>
+                    <span>Darsga kelish hisobotlari</span>
+                  </a>
+                </li>
+                <li class="dropdown-item my-1">
+                  <a class="p-2" href="./hisobot/hisobotlar_9.html">
+                    <i class="bx bx-list-ul"></i>
+                    <span>Darsga kelish hisobotlari</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="col-sm-10 col-lg-11">
             <div class="row p-4 overflow-y-scroll" style="max-height: 100vh;">
-              
               <div class="col-12 col-sm-8 col-lg-4">
                 
               <div class="col-12">

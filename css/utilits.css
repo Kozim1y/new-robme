@@ -1,23 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
 }
-body::-webkit-scrollbar {
-  width: 4px;
-}
-body::-webkit-scrollbar-thumb {
-  background: #4e8c28;
-}
-.pog-navbar div:hover{
-  color: #01b001;
-  background-color: #44ff0024;
-  cursor: pointer;
-}
-.categories-box a {
-  background-color: white;
-}
-.categories-box a:hover{
-  background-color: #44ff0024;
-}
 .circle{
   font-size: 7px;
 }
