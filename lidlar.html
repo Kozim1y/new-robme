@@ -259,7 +259,10 @@
             
             <div class="row drag-lists">
               <div class="col-12 col-sm-6 col-xl-4 p-2">
-                <h4>So'rovlar <span class="text-secondary">(24)</span></h4>
+                <div class="d-flex align-items-end justify-content-between">
+                  <h4>So'rovlar <span class="text-secondary">(24)</span></h4>
+                  <i class="bx bx-list-ul fs-4" data-bs-toggle="offcanvas" data-bs-target="#addGroupBox" aria-controls="offcanvasRight"></i>
+                </div>
 
                 <div class="dropdown my-2">
                   <button class="btn btn-primary w-100 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -355,11 +358,16 @@
               </div>
 
               <div class="col-12 col-sm-6 col-xl-4 p-2">
-                <h4>Kutish <span class="text-secondary">(13)</span></h4>
+                <div class="d-flex align-items-end justify-content-between">
+                  <h4>Kutish <span class="text-secondary">(13)</span></h4>
+                  <i class="bx bx-list-ul fs-4" data-bs-toggle="offcanvas" data-bs-target="#addGroupBox" aria-controls="offcanvasRight"></i>
+                </div>
                 <ul class="bg-secondary bg-opacity-25 drag-list list-unstyled px-2 py-1 rounded">
                   <h6 class="text-secondary py-1">Walked by</h6>
                 </ul>
               </div>
+
+              
             </div>
 
           </div>
@@ -461,6 +469,23 @@
             <textarea class="form-control my-1" rows="3"></textarea>
           </label>
           <button class="btn btn-success rounded-pill" type="submit">Yuborish</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- To'plam qo'shish modal -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addGroupBox" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 id="offcanvasRightLabel">Bo'lim yaratish</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form action="#">
+          <label class="w-100">
+            <span>Nomi</span>
+            <input class="form-control mt-3" type="text" name="" id="">
+          </label>
+          <button class="btn btn-success rounded-pill mt-3">Yarating</button>
         </form>
       </div>
     </div>
